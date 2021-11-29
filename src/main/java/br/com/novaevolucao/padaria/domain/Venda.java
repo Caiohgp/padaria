@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -16,6 +17,6 @@ public class Venda {
     private Long id;
     private Double valor;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    private Produto produto;
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    private List<Produto> produto;
 }

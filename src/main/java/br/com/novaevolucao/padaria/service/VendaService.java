@@ -26,9 +26,9 @@ public class VendaService {
 
     public Venda save(VendaPostRequest vendaPostRequest){
         Venda venda = new Venda();
-        Produto produto = produtoService.findByIdList(vendaPostRequest.getProduto());
 
         venda.setValor(vendaPostRequest.getValor());
+        venda.setProduto(produtoService.findByIdList(vendaPostRequest.getProduto()));
 
         return vendaRepository.save(venda);
     }

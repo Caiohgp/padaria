@@ -1,12 +1,10 @@
 package br.com.novaevolucao.padaria.service;
 
-import br.com.novaevolucao.padaria.domain.Produto;
 import br.com.novaevolucao.padaria.domain.Venda;
 import br.com.novaevolucao.padaria.repository.VendaRepository;
 import br.com.novaevolucao.padaria.schema.VendaPostRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,6 +26,7 @@ public class VendaService {
         Venda venda = new Venda();
 
         venda.setValor(vendaPostRequest.getValor());
+        venda.setQuantidade(vendaPostRequest.getQuantidade());
         venda.setProduto(produtoService.findByIdList(vendaPostRequest.getProduto()));
 
         return vendaRepository.save(venda);

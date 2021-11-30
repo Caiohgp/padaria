@@ -1,6 +1,5 @@
 package br.com.novaevolucao.padaria.schema;
 
-import br.com.novaevolucao.padaria.domain.Produto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class VendaPostRequest {
+public class CompraPostRequest {
     private Double valor;
     private List<Long> quantidade;
     private List<Long> produto;

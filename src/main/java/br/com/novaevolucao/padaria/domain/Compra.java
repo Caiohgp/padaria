@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Venda {
+public class Compra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

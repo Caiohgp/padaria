@@ -1,10 +1,8 @@
 package br.com.novaevolucao.padaria.service;
 
 import br.com.novaevolucao.padaria.domain.Compra;
-import br.com.novaevolucao.padaria.domain.Venda;
 import br.com.novaevolucao.padaria.repository.CompraRepository;
 import br.com.novaevolucao.padaria.schema.CompraPostRequest;
-import br.com.novaevolucao.padaria.schema.VendaPostRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

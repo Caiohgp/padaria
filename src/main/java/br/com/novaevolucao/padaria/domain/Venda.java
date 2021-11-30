@@ -16,6 +16,7 @@ public class Venda {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Double valor;
+    @ElementCollection
     private List<Long> quantidade;
     @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Produto> produto;

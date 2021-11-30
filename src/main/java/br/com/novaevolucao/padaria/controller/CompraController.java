@@ -1,9 +1,7 @@
 package br.com.novaevolucao.padaria.controller;
 
 import br.com.novaevolucao.padaria.domain.Compra;
-import br.com.novaevolucao.padaria.domain.Venda;
 import br.com.novaevolucao.padaria.schema.CompraPostRequest;
-import br.com.novaevolucao.padaria.schema.VendaPostRequest;
 import br.com.novaevolucao.padaria.service.CompraService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

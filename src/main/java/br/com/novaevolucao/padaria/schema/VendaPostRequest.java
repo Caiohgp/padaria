@@ -1,6 +1,5 @@
 package br.com.novaevolucao.padaria.schema;
 
-import br.com.novaevolucao.padaria.domain.Produto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
